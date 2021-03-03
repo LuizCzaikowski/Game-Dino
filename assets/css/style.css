@@ -1,0 +1,85 @@
+body {
+    background: #fafafa;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(../img/cactus.png);
+}
+
+.game-over {
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes slideright {
+    from { 
+        background-position: 70000%;
+    }
+    to { background-position: 0;
+    }
+}  
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+.restart {
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+    font-family: arial;
+    margin-left: 550px;
+    background-color: #666666;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.restart:hover {
+    color: #fff;
+}
+/*Deixando responsivo para varios tipos de tela*/
+@media screen and (width: 1366px) {
+    .restart {
+        margin-left: 600px;
+    }
+}
+
+@media screen and (width: 1600px) {
+    .restart {
+        margin-left: 720px;
+    }
+}
+
+@media screen and (width: 1920px) {
+    .restart {
+        margin-left: 870px;
+    }
+}
+
+@media screen and (width: 2560px) {
+    .restart {
+        margin-left: 1180px;
+    }
+}
+
